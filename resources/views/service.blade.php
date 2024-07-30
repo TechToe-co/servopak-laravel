@@ -61,7 +61,7 @@
     <!-- top head end -->
 
     <!-- navbar start -->
-    @include('partials.navbar')
+    @include('partials.navbar.navbar')
 
     <!-- navbar end -->
     <!-- banner area start -->
