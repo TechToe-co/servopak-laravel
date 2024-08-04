@@ -1,6 +1,13 @@
 <?php
 
+use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
+
+use Illuminate\Support\Facades\Mail;
+
+
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +36,6 @@ Route::get('/service', function () {
     return view('service');
 });
 
+Route::post('/submit', [App\Http\Controllers\ContactController::class, 'submitForm'])->middleware('sanitize_response');
+
+Route::get('send-mail', [App\Http\Controllers\EmailController::class, 'sendWelcomeEmail']);

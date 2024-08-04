@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    
     <!-- navbar start -->
     @include('partials.navbar.navbar')
     <!-- navbar end -->
@@ -42,34 +43,67 @@
                 </div>
 
                 <div class="">
-                    <form id="reused_form" action="POST">
+
+                    {{-- form in contact --}}
+
+
+
+                    <form id="reused_form" action="{{ url('/submit') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
                                 <span class="label-text font-bold">Name</span>
                             </div>
                             <input id="name" name="name" type="text" placeholder="Your name"
                                 class="input input-bordered w-full max-w-xs" />
+
                         </label>
+
+                        
+
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
-                                <span class="label-text font-bold">Telephone</span>
+                                <span class="label-text font-bold">Phone</span>
                             </div>
-                            <input id="telephone" name="telephone" type="text" placeholder="+49 xxxxxxxx"
+                            <input id="telephone" name="telephone" type="text" placeholder="+49xxxxxxxxxx"
                                 class="input input-bordered w-full max-w-xs" />
+
                         </label>
+
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
                                 <span class="label-text font-bold">Message</span>
                             </div>
-                            <textarea id="comments" name="comments" class="textarea textarea-bordered" placeholder="Your Message"></textarea>
-                        </label>
+                            <textarea id="comments" name="message" class="textarea textarea-bordered" placeholder="Your Message"></textarea>
 
+                        </label>
                         <div class="mt-5 text-right">
-                            <button type="submit" class="btn-one">
+                            <button id="sub_all" type="submit" class="btn-one">
                                 <i class="fa-solid fa-envelope"></i> SUBMIT
                             </button>
                         </div>
                     </form>
+                    <script>
+                        
+                        document.getElementById('sub_all').addEventListener('click', function(event) {
+                            event.preventDefault(); 
+                            document.getElementById('reused_form').submit(); // Submit the form
+                        });
+                    </script>
+
+                    {{-- END form in contact --}}
+
 
                     <div class="pt-5 mt-5" id="success_message" style="display: none">
                         <h3 class="text-success">Your message submit successfully!</h3>
@@ -126,7 +160,8 @@
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.1849613470486!2d-76.89603284546763!3d38.87400987542251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7bf1ec9298313%3A0x713f85cd8d735a82!2s6626%20Ronald%20Rd%20md%2C%20Capitol%20Heights%2C%20MD%2020743%2C%20USA!5e0!3m2!1sen!2s!4v1722029249158!5m2!1sen!2s"
             width="100%" height="550" style="border: 0" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         <div class="grid"></div>
     </div>
     <!-- footer area start -->
@@ -137,5 +172,7 @@
     <script src="js/script.js"></script>
     <script src="js/form.js"></script>
 </body>
+
+
 
 </html>
