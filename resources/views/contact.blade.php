@@ -76,7 +76,7 @@
                             <div class="label">
                                 <span class="label-text font-bold">Phone</span>
                             </div>
-                            <input id="telephone" name="telephone" type="text" placeholder="+49xxxxxxxxxx"
+                            <input id="telephone" name="telephone" type="text" placeholder="+xxxxxxxxxxxx"
                                 class="input input-bordered w-full max-w-xs" />
 
                         </label>
