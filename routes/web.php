@@ -38,4 +38,3 @@ Route::get('/service', function () {
 
 Route::post('/submit', [App\Http\Controllers\ContactController::class, 'submitForm'])->middleware('sanitize_response');
 
-Route::get('send-mail', [App\Http\Controllers\EmailController::class, 'sendWelcomeEmail']);
