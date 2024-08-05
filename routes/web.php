@@ -1,9 +1,10 @@
 <?php
 
+
 use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
-
 use Illuminate\Support\Facades\Mail;
+use App\Mail\WelcomeEmail;
 
 
 use App\Http\Controllers\ContactController;
@@ -39,3 +40,11 @@ Route::get('/service', function () {
 Route::post('/submit', [App\Http\Controllers\ContactController::class, 'submitForm'])->middleware('sanitize_response');
 
 Route::get('send-mail', [App\Http\Controllers\EmailController::class, 'sendWelcomeEmail']);
+
+Route::get('/send-test-email', function () {
+    Mail::to('tahaubaid27@gmail.com')->send(new WelcomeEmail());
+    return 'Test email sent!';
+});
+
+
+

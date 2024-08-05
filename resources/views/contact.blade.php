@@ -83,6 +83,14 @@
 
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
+                                <span class="label-text font-bold">Email</span>
+                            </div>
+                            <input type="email" id="email" name="email" class="input input-bordered" placeholder="Your Email" required>
+                        </label>
+                        
+
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
                                 <span class="label-text font-bold">Message</span>
                             </div>
                             <textarea id="comments" name="message" class="textarea textarea-bordered" placeholder="Your Message"></textarea>

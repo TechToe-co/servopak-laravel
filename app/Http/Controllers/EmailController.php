@@ -10,10 +10,10 @@ class EmailController extends Controller
 {
     public function sendWelcomeEmail()
     {
-        $toEmail = 'hiraw3178@gmail.com';
-        $message = 'Ubaid message';
-        $subject = 'Ubaid subject';
+        $toEmail = 'm.abdullahrashid931@gmail.com';
+        $message = 'Abdullah G';
+        $subject = 'Ubaid subject 123';
 
-        Mail::to($toEmail)->send(new WelcomeEmail($message, $subject));
+        // Mail::to($toEmail)->send(new WelcomeEmail($message, $subject));
     }
 }

@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-
+use App\Mail\WelcomeEmail;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -16,6 +17,7 @@ class ContactController extends Controller
             'name' => 'required|string|regex:/^[\pL\s]+$/u',
             'telephone' => 'required|digits:11',
             'message' => 'required|string|min:3|max:1000',
+            'email' => 'required|email|max:255',
         ]);
 
         if ($validator->fails()) {
@@ -25,15 +27,12 @@ class ContactController extends Controller
         }
 
         $name = $request->input('name');
-        $telephone = $request->input('telephone');
+        $phone_number = $request->input('telephone');
         $message = $request->input('message');
+        $subject = 'Concerns';
+        Mail::to('sales@servopak.co')->send(new WelcomeEmail($message, $subject, $phone_number, $name));
 
-        return redirect()->route('send-mail', [
-            'name' => $name,
-            'telephone' => $telephone,
-            'message' => $message,
-        ]);
-
-        
-    }
+       
+        return redirect(url('/contact'));
+    }   
 }
