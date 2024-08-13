@@ -8,6 +8,7 @@ class Kernel extends HttpKernel
 {
     protected $routeMiddleware = [
         'sanitize_response' => \App\Http\Middleware\SanitizeInput::class,
+        'check_url'=> \App\Http\Middleware\CheckUrlMiddleware::class,
     ];
     
     /**

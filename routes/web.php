@@ -20,21 +20,23 @@ use App\Http\Controllers\EmailController;
 |
 */
 
-Route::get('/', function () { // done
-    return view('index');
-});
+// Route::get('/', function () { 
+//     return view('index');
+// })->middleware('check_url');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/',[App\Http\Controllers\IndexController::class, 'index']);
+
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
+
+Route::get('/contact',[App\Http\Controllers\IndexController::class, 'contact']);
 
 Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/service', function () {
-    return view('service');
-});
+Route::get('/service', [App\Http\Controllers\IndexController::class, 'service']);
 
 Route::post('/submit', [App\Http\Controllers\ContactController::class, 'submitForm'])->middleware('sanitize_response');
 

@@ -173,7 +173,7 @@
         <div class="grid"></div>
     </div>
     <!-- footer area start -->
-    @include('partials.footer.footer_up')
+    @include('partials.footer.footer_down')
     <!-- footer area end -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
