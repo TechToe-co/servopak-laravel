@@ -26,8 +26,8 @@
 
             <!-- Logo -->
             <a href="/" class="text-4xl font-bold gap-2 nav-logo">
-                <img src="{{ asset('storage/' . $client->id . '/' . $client->logo) }}" alt="Client Logo"
-                class="img-fluid w-60 pe-2 mt-1" />
+                <img style="height: 50px" src="{{ asset('storage/' . $client->id . '/' . $client->logo) }}" alt="Client Logo"
+                class="i" />
            
             </a>
         </div>
