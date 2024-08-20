@@ -34,7 +34,8 @@
                 <ul>
                     <li class="pb-2">
                         <a class="text-gray hover:text-yellow transition-all duration-300 hover:underline"
-                            href="mailto:taimour@servopak.co">Email:{{$contact->email}}</a>
+                        href="#">Email:{{$contact->email}}
+                    </a>
                     </li>
                     <li class="pb-2">
                         <a class="text-gray hover:text-yellow transition-all duration-300 hover:underline"
