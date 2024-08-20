@@ -32,7 +32,8 @@ class ClientsTableSeeder extends Seeder
                 'favicon' => 'bt_favicon.png',
                 'created_at' => now(),
                 'updated_at' => now(),
-            ]
+            ],
+            
         ]);
     }
 }
