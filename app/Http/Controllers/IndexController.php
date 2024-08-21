@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Client_contact;
+use App\Models\ClientContact;
 
 class IndexController extends Controller
 {
     private function getClientAndContact()
     {
         $client = session('active_client');
-        $contact = Client_contact::where('client_id', $client->id)->first();
+        $contact = ClientContact::where('client_id', $client->id)->first();
         return compact('client', 'contact');
     }
 
@@ -32,5 +32,3 @@ class IndexController extends Controller
         return view('contact', $data);
     }
 }
-
-
