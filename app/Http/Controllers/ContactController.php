@@ -9,14 +9,12 @@ use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
-
     public function submitForm(Request $request)
     {
-        // dd($request);
         $validator = Validator::make($request->all(), [
-            'name' => 'required|string|regex:/^[\pL\s]+$/u',
+            'name' => 'required|string',
             'telephone' => 'required|digits:11',
-            'message' => 'required|string|min:3|max:1000',
+            'message' => 'required|string|min:3|max:5000',
             'email' => 'required|email|max:255',
         ]);
 
@@ -32,7 +30,6 @@ class ContactController extends Controller
         $subject = 'Concerns';
         Mail::to('sales@servopak.co')->send(new WelcomeEmail($message, $subject, $phone_number, $name));
 
-       
         return redirect(url('/contact'));
-    }   
+    }
 }

@@ -1,12 +1,15 @@
 <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ServoPak | Freight Solutions HTML Template</title>
-    <link rel="shortcut icon" href="img/faveicon.png" type="image/x-icon" />
+    <title>{{$client->name}}</title>
+    
+    <link rel="icon" href="{{ asset('storage/' . $client->id . '/' . $client->favicon) }}" type="image/png">
+
+
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.10.5/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
-    />
+    />  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -28,3 +31,5 @@
     />
     <link rel="stylesheet" href="src/output.css" />
     <link rel="stylesheet" href="src/style.css" />
+
+    
