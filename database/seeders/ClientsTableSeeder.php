@@ -13,7 +13,8 @@ class ClientsTableSeeder extends Seeder
      */
     public function run(): void
     {
-
+        DB::table('clients')->truncate();
+        
         DB::table('clients')->insert([
             [
                 'id' => 1,
@@ -32,6 +33,25 @@ class ClientsTableSeeder extends Seeder
                 'favicon' => 'bt_favicon.png',
                 'created_at' => now(),
                 'updated_at' => now(),
+            ],
+            [
+                'id' => 3,
+                'name' => 'BTECH',
+                'base_url' => 'btech.local',
+                'logo' => 'logo.png',
+                'favicon' => 'favicon.png',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id' => 4,
+               'name' => 'skyways express logistics LLC',
+               'base_url' => 'skyways.local',
+               'logo' => 'logo.png',
+               'favicon' => 'favicon.png',
+               'created_at' => now(),
+               'updated_at' => now(),
+
             ],
             
         ]);
