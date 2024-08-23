@@ -13,12 +13,13 @@ class ClientsTableSeeder extends Seeder
      */
     public function run(): void
     {
-
+        DB::table('clients')->truncate();
+        
         DB::table('clients')->insert([
             [
                 'id' => 1,
                 'name' => 'ServoPak',
-                'base_url' => 'servopak.local',
+                'base_url' => 'servopak.co',
                 'logo' => 'logo.png',
                 'favicon' => 'favicon.png',
                 'created_at' => now(),
@@ -26,10 +27,10 @@ class ClientsTableSeeder extends Seeder
             ],
             [
                 'id' => 2,
-                'name' => 'BrainyTech',
-                'base_url' => 'brainytech.local',
-                'logo' => 'bt_logo.png',
-                'favicon' => 'bt_favicon.png',
+                'name' => 'SkyWays',
+                'base_url' => 'mohsinayyaz.com',
+                'logo' => 'logo.png',
+                'favicon' => 'favicon.png',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
