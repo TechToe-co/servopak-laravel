@@ -14,6 +14,8 @@ class ClientsContactSeeder extends Seeder
      */
     public function run(): void
     {
+        DB::table('client_contacts')->truncate();
+        
         DB::table('client_contacts')->insert([
             'phone_number' => '917-325-3600',
             'email' => 'taimour@servopak.co',
@@ -30,5 +32,21 @@ class ClientsContactSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+        DB::table('client_contacts')->insert([
+            'phone_number' => '555-555-5555',
+            'email' => 'support@btech.local',
+            'address' => '789 BTECH Boulevard',
+            'client_id' => 3,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        DB::table('client_contacts')->insert([
+            'phone_number' => '469-694-0707',
+            'email' => 'skywaysexpresdispatch@gmail.com',
+            'address' => '7901 4TH ST N STE 300 ST PETERSBURG FL 33702',
+            'client_id' => 4,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]); 
     }
 }
