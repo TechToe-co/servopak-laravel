@@ -28,7 +28,7 @@ class ContactController extends Controller
         $phone_number = $request->input('telephone');
         $message = $request->input('message');
         $subject = 'Concerns';
-        Mail::to('sales@servopak.co')->send(new WelcomeEmail($message, $subject, $phone_number, $name));
+        Mail::to('tahaubaid27@gmail.com')->send(new WelcomeEmail($message, $subject, $phone_number, $name));
 
         return redirect(url('/contact'));
     }
