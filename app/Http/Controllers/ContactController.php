@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Mail\WelcomeEmail;
 use Illuminate\Support\Facades\Mail;
+use App\Models\ClientContact;
 
 class ContactController extends Controller
 {
@@ -28,8 +29,9 @@ class ContactController extends Controller
         $phone_number = $request->input('telephone');
         $message = $request->input('message');
         $subject = 'Concerns';
-        Mail::to('tahaubaid27@gmail.com')->send(new WelcomeEmail($message, $subject, $phone_number, $name));
-
+        $client = session('active_client');
+        $contact = ClientContact::where('client_id', $client->id)->first();
+        Mail::to($contact->email)->send(new WelcomeEmail($message, $subject, $phone_number, $name));
         return redirect(url('/contact'));
     }
 }
