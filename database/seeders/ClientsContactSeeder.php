@@ -9,9 +9,6 @@ use Illuminate\Support\Facades\DB;
 
 class ClientsContactSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         DB::table('client_contacts')->truncate();
@@ -24,11 +21,21 @@ class ClientsContactSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+ 
         DB::table('client_contacts')->insert([
             'phone_number' => '469-694-0707',
             'email' => 'skywaysexpresdispatch@gmail.com',
             'address' => '7901 4TH ST N STE 300 ST PETERSBURG FL 33702',
             'client_id' => 2,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+ 
+        DB::table('client_contacts')->insert([
+            'phone_number' => '469-694-0707',
+            'email' => 'info@4chainslogistics.com',
+            'address' => '7901 4TH ST N STE 300 ST PETERSBURG FL 33702',
+            'client_id' => 3,
             'created_at' => now(),
             'updated_at' => now(),
         ]);
