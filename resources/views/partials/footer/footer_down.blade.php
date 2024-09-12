@@ -2,13 +2,13 @@
     <div class="container xl:px-40 px-5 mx-auto py-20">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-20">
             <div class="md:col-span-1 lg:col-span-4">
-                <a class="text-4xl font-bold flex gap-2" href="/index.html">
+                <a class="text-4xl font-bold flex gap-2" href="/">
                     <img src="{{ asset('storage/' . $client->id . '/' . $client->logo) }}" alt="Client Logo"
                         class="img-fluid w-60 pe-2 mt-1" />
                 </a>
                 <p class="pt-5 text-gray kumbh">
                     ServoPak is dedicated to revolutionizing urban mobility by
-                    offering smart, sustainable, and efficient transit solutions. Our
+                    offering smart, sinable, and efficient transit solutions. Our
                     mission is to enhance the way people navigate cities.
                 </p>
             </div>

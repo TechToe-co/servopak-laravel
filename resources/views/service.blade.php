@@ -8,48 +8,11 @@
 </head>
 
 <body>
-    <!-- top head start -->
-    <div class="container mx-auto xl:px-32 py-8 bg-hasan hidden 2xl:block">
-        <div class="grid grid-cols-12">
-            <div class="col-span-4">
-                <a class="text-4xl font-bold flex gap-2" href="#">
-                    <img class="w-12 h-10 pe-2" src="img/faveicon.png" alt="" />
-                    ServoPak
-                </a>
-            </div>
-            <div class="col-span-8 ml-auto">
-                <div class="flex gap-20">
-                    <div class="flex border p-2">
-                        <div>
-                            <i
-                                class="fa-solid fa-phone bg-yellow px-2 py-2 me-2 hover:text-white transition-all duration-300"></i>
-                        </div>
-                        <a class="hover:text-yellow" href="#">125-3654-7895</a>
-                    </div>
-                    <div class="flex border p-2">
-                        <div>
-                            <i
-                                class="fa-solid fa-envelope bg-yellow px-2 py-2 me-2 hover:text-white transition-all duration-300"></i>
-                        </div>
-                        <a class="hover:text-yellow" href="#">yourmail@gmail.com</a>
-                    </div>
-                    <div class="flex border p-2">
-                        <div>
-                            <i
-                                class="fa-solid fa-location-dot bg-[#ffc107] px-2 py-2 me-2 hover:text-white transition-all duration-300"></i>
-                        </div>
-                        <a class="hover:text-[#ffc107]" href="#">125 Main City,USA</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- top head end -->
-
+    
     <!-- navbar start -->
     @include('partials.navbar.navbar')
-
     <!-- navbar end -->
+
     <!-- banner area start -->
     <div
         class="bg-[#00000082] bg-blend-overlay bg-[url('../img/truck2.jpg')] xl:h-[70vh] h-[100vh] bg-cover text-white">
@@ -58,7 +21,7 @@
                 <p class="text-6xl font-bold fira">Service</p>
                 <div class="flex justify-center pt-3">
                     <a class="text-yellow hover:text-white transition-all duration-300 font-semibold"
-                        href="#">Home</a>
+                        href="/">Home</a>
 
                     <p class="font-semibold">
                         <i class="fa-solid fa-angle-right px-2"></i>Service
@@ -68,6 +31,7 @@
         </div>
     </div>
     <!-- banner area end -->
+
     <!-- service area start -->
     <div class="container mx-auto py-10 my-10 xl:px-40 px-5">
         <div class="grid">
