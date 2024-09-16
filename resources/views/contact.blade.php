@@ -19,7 +19,7 @@
                 <p class="text-6xl font-bold fira">Contact</p>
                 <div class="flex justify-center pt-3">
                     <a class="text-yellow hover:text-white transition-all duration-300 font-semibold kumbh"
-                        href="#">Home</a>
+                        href="/">Home</a>
 
                     <p class="font-semibold kumbh">
                         <i class="fa-solid fa-angle-right px-2"></i>Contact

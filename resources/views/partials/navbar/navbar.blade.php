@@ -40,17 +40,17 @@
             </a>
             <ul class="menu menu-horizontal px-1 items-center">
                 <li class="font-semibold">
-                    <a class="hover:bg-transparent hover:text-[#FF9A3F]" href="index.html"
+                    <a class="hover:bg-transparent hover:text-[#FF9A3F]" href="/"
                         style="font-size: 16px">Home</a>
                 </li>
 
                 <li class="font-semibold">
                     <a class="hover:bg-transparent hover:text-[#FF9A3F]" style="font-size: 16px"
-                        href="service.html">Services</a>
+                        href="/service">Services</a>
                 </li>
 
                 <li class="font-semibold">
-                    <a class="font-semibold" href="contact.html">
+                    <a class="font-semibold" href="/contact">
                         <button class="btn-one" style="font-size: 14px; padding: 10px 24px">
                             Connect With Us
                         </button>

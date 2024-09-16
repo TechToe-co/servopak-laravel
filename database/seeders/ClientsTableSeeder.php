@@ -27,15 +27,6 @@ class ClientsTableSeeder extends Seeder
             ],
             [
                 'id' => 2,
-                'name' => 'SkyWays',
-                'base_url' => 'mohsinayyaz.com',
-                'logo' => 'logo.png',
-                'favicon' => 'favicon.png',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'id' => 3,
                 'name' => '4chainslogistics',
                 'base_url' => '4chainslogistics.com',
                 'logo' => 'logo.png',
