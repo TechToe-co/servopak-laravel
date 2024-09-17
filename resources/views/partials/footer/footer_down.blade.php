@@ -7,8 +7,8 @@
                         class="img-fluid w-60 pe-2 mt-1" />
                 </a>
                 <p class="pt-5 text-gray kumbh">
-                    ServoPak is dedicated to revolutionizing urban mobility by
-                    offering smart, sinable, and efficient transit solutions. Our
+                    {{$client->name}} is dedicated to revolutionizing urban mobility by
+                    offering smart, sustainable, and efficient transit solutions. Our
                     mission is to enhance the way people navigate cities.
                 </p>
             </div>
@@ -65,7 +65,7 @@
         <div class="border-b border-gray pt-20"></div>
         <div class="grid grid-cols-1 lg:grid-cols-2 pt-10">
             <div>
-                <p>Copyright © 2024 ServoPak. All Rights Reserved.</p>
+                <p>Copyright © 2024 {{$client->name}}. All Rights Reserved.</p>
             </div>
             <div class="text-end mt-5 pt-5 lg:mt-[-20px]">
                 <a class="hover:text-yellow transition-all duration-300" href="#">Terms & Conditions</a>
