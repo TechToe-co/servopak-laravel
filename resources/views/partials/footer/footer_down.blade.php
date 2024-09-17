@@ -8,7 +8,7 @@
                 </a>
                 <p class="pt-5 text-gray kumbh">
                     {{$client->name}} is dedicated to revolutionizing urban mobility by
-                    offering smart, sustainable, and efficient transit solutions. Our
+                    offering smart, sinable, and efficient transit solutions. Our
                     mission is to enhance the way people navigate cities.
                 </p>
             </div>
