@@ -26,7 +26,7 @@
                                 Dispatch Needs
                             </h1>
                             <p class="pt-5 text-[16px] kumbh">
-                                Servopak streamlines your truck dispatch needs with advanced
+                                {{$client->name}} streamlines your truck dispatch needs with advanced
                                 <br />
                                 technology and expert support for greater efficiency.
                             </p>
@@ -41,7 +41,7 @@
                                 Partner
                             </h1>
                             <p class="pt-5 text-[16px] kumbh">
-                                Count on Servopak for dependable and efficient truck dispatch
+                                Count on {{$client->name}} for dependable and efficient truck dispatch
                                 services, <br />
                                 ensuring your shipments are handled with care.
                             </p>
