@@ -14,21 +14,27 @@ class IndexController extends Controller
         return compact('client', 'contact');
     }
 
-    public function index(Request $request)
+    public function index()
     {
         $data = $this->getClientAndContact();
         return view('index', $data);
     }
 
-    public function service(Request $request)
+    public function service()
     {
         $data = $this->getClientAndContact();
         return view('service', $data);
     }
 
-    public function contact(Request $request)
+    public function contact()
     {
         $data = $this->getClientAndContact();
         return view('contact', $data);
+    }
+
+    public function privacy()
+    {
+        $data = $this->getClientAndContact();
+        return view('privacy-policy', $data);
     }
 }

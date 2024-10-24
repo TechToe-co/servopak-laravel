@@ -34,8 +34,8 @@
                 <ul>
                     <li class="pb-2">
                         <a class="text-gray hover:text-yellow transition-all duration-300 hover:underline"
-                        href="#">Email:{{$contact->email}}
-                    </a>
+                            href="#">Email:{{$contact->email}}
+                        </a>
                     </li>
                     <li class="pb-2">
                         <a class="text-gray hover:text-yellow transition-all duration-300 hover:underline"
@@ -46,7 +46,7 @@
             <div class="md:col-span-1 lg:col-span-3">
                 <p class="text-xl font-bold pb-7 fira">Our Address</p>
                 <p class="text-gray">
-                  {{$contact->address}}
+                    {{$contact->address}}
                 </p>
                 <div class="mt-4">
                     <a class="text-yellow hover:text-white transition-all duration-300 me-5" href="#"><i
@@ -68,7 +68,7 @@
                 <p>Copyright © 2024 {{$client->name}}. All Rights Reserved.</p>
             </div>
             <div class="text-end mt-5 pt-5 lg:mt-[-20px]">
-                <a class="hover:text-yellow transition-all duration-300" href="#">Terms & Conditions</a>
+                <a class="hover:text-yellow transition-all duration-300" href="privacy">Privacy Policy</a>
             </div>
         </div>
     </div>
