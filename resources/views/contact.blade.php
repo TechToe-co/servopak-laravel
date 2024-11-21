@@ -97,7 +97,7 @@
 
                         </label>
                         <label for="opt-in-confirmation">
-                            <input type="checkbox" id="opt-in-confirmation" name="opt-in-confirmation" class="mt-5">
+                            <input type="checkbox" id="opt-in-confirmation" name="opt-in-confirmation" class="mt-5" style="scale: 1.2;">
                             <strong class="mt-5">By checking this box, you consent to receive SMS updates, notifications, and promotional offers from {{ $client->name }}. You can opt out at any time.</strong>
                         </label>
                         <div class="mt-5 text-right">
