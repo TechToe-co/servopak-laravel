@@ -96,9 +96,10 @@
                             <textarea id="comments" name="message" class="textarea textarea-bordered" placeholder="Your Message"></textarea>
 
                         </label>
+                        <p>By checking this box, you consent to receive SMS updates, notifications, and promotional offers from {{ $client->name }}. You can opt out at any time.</p>
                         <label for="opt-in-confirmation mx-1">
                             <input type="checkbox" id="opt-in-confirmation" name="opt-in-confirmation">
-                            By checking this box, you consent to receive SMS updates, notifications, and promotional offers from [Your Business Name]. You can opt out at any time.
+                            <strong>I agree to receive SMS messages.</strong>
                         </label>
                         <div class="mt-5 text-right">
                             <button id="sub_all" type="submit" class="btn-one">
