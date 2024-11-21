@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    
+
     <!-- navbar start -->
     @include('partials.navbar.navbar')
     <!-- navbar end -->
@@ -55,12 +55,12 @@
                         <div class="alert alert-danger">
                             <ul>
                                 @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
+                                <li>{{ $error }}</li>
                                 @endforeach
                             </ul>
                         </div>
-                    @endif
-                    
+                        @endif
+
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
                                 <span class="label-text font-bold">Name</span>
@@ -70,7 +70,7 @@
 
                         </label>
 
-                        
+
 
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
@@ -87,7 +87,7 @@
                             </div>
                             <input type="email" id="email" name="email" class="input input-bordered" placeholder="Your Email" required>
                         </label>
-                        
+
 
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
@@ -96,6 +96,8 @@
                             <textarea id="comments" name="message" class="textarea textarea-bordered" placeholder="Your Message"></textarea>
 
                         </label>
+                        <p>By checking this box, you consent to receive SMS updates, notifications, and promotional offers from [Your Business Name]. You can opt out at any time</p>
+                        <input type="checkbox" name="opt-in-confirmation" id="opt-in-confirmation" value="0">
                         <div class="mt-5 text-right">
                             <button id="sub_all" type="submit" class="btn-one">
                                 <i class="fa-solid fa-envelope"></i> SUBMIT
@@ -103,9 +105,8 @@
                         </div>
                     </form>
                     <script>
-                        
                         document.getElementById('sub_all').addEventListener('click', function(event) {
-                            event.preventDefault(); 
+                            event.preventDefault();
                             document.getElementById('reused_form').submit(); // Submit the form
                         });
                     </script>
