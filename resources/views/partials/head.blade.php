@@ -2,7 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{$client->name}}</title>
     
-    <link rel="icon" href="{{ asset('storage/' . $client->id . '/' . $client->favicon) }}" type="image/png">
+    <link rel="icon" href="{{ asset('logo/' . $client->id . '/' . $client->favicon) }}" type="image/png">
 
 
     <link
