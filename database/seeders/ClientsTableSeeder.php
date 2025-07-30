@@ -19,7 +19,7 @@ class ClientsTableSeeder extends Seeder
             [
                 'id' => 1,
                 'name' => 'ServoPak',
-                'base_url' => 'servopak.co',
+                'base_url' => 'mohsinayyaz.com',
                 'logo' => 'logo.png',
                 'favicon' => 'favicon.png',
                 'created_at' => now(),
