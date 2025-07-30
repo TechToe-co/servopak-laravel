@@ -26,7 +26,7 @@
 
             <!-- Logo -->
             <a href="/" class="text-4xl font-bold gap-2 nav-logo">
-                <img style="max-height: 150px;" style="height: 50px" src="{{ asset('logo/' . $client->id . '/' . $client->logo) }}" alt="Client Logo"
+                <img style="max-height: 70px;" style="height: 50px" src="{{ asset('logo/' . $client->id . '/' . $client->logo) }}" alt="Client Logo"
                 class="i" />
            
             </a>
@@ -36,7 +36,7 @@
         <!-- Navbar Center (Hidden on smaller screens) -->
         <div class="navbar-center hidden 2xl:flex w-full justify-between items-center">
             <a class="text-4xl font-bold flex" href="/index.html">
-                <img style="max-height: 150px;" src="{{ asset('logo/' . $client->id . '/' . $client->logo) }}" alt="Client Logo">
+                <img style="max-height: 70px;" src="{{ asset('logo/' . $client->id . '/' . $client->logo) }}" alt="Client Logo">
             </a>
             <ul class="menu menu-horizontal px-1 items-center">
                 <li class="font-semibold">
